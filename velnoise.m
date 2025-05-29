@@ -34,13 +34,13 @@ hold on;
 lw = 1.5;
 plot(data.t(:,cols), 100 * data.zetaLowpass(3,cols),'-', 'LineWidth', lw, 'color', 0.6*[1 0 1]); grid on;
 plot(data.t(:,cols), 100 * data.zeta(3,cols),'color',[1 0 1]); grid on;
-plot(data.t(:,cols), rad2deg(data.zetaLowpass(4,cols)),'-', 'LineWidth', lw, 'color', 0.6*[1 0 0]); grid on;
+plot(data.t(:,cols), rad2deg(data.zetaLowpass(4,cols)),'-', 'LineWidth', lw, 'color', 0.8*[1 0 0]); grid on;
 plot(data.t(:,cols), rad2deg(data.zeta(4,cols)),'r'); grid on;
-plot(data.t(:,cols), rad2deg(data.zetaLowpass(6+1,cols)),'-', 'LineWidth', lw, 'color', 0.6*[0 1 0]); grid on;
+plot(data.t(:,cols), rad2deg(data.zetaLowpass(6+1,cols)),'-', 'LineWidth', lw, 'color', 0.8*[0 1 0]); grid on;
 plot(data.t(:,cols), rad2deg(data.zeta(6+1,cols)),'g'); grid on;
-legend({'$v_z$ lowpass [cm/s]', '$v_z$ [cm/s]', ...
-        '$\omega_x$ lowpass [deg/s]', '$\omega_x$ [deg/s]', ...
-        '$\dot{\theta}_1$ lowpass [deg/s]', '$\dot{\theta}_1$ [deg/s]'
+legend({'$v_z$ low-pass [cm/s]', '$v_z$ [cm/s]', ...
+        '$\omega_x$ low-pass [deg/s]', '$\omega_x$ [deg/s]', ...
+        '$\dot{\theta}_1$ low-pass [deg/s]', '$\dot{\theta}_1$ [deg/s]'
         }, ...
        'Interpreter', 'latex', 'Location', 'northeast');
 ylim([-5 5]);
