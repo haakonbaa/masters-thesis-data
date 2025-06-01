@@ -1,5 +1,5 @@
-data = readh5('./data/20250513-165216.h5');
-data = readh5('./data/20250513-154920.h5');
+data = readh5('./data/20250513-165216.h5', false);
+data = readh5('./data/20250513-154920.h5', false);
 
 cols = find(data.t < 20);
 
